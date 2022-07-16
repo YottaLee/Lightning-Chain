@@ -1,5 +1,5 @@
 ## Introduction
-Now that we're familiar with a blockchain's Layer 1 from Coin, it's time that we move on to a Layer 2 scaling solution! In class, you've learned about off-chain payment channels. Lightning is a scaling protocol for Bitcoin, and we've done our best to imitate that here.
+Now that finished with a blockchain's Layer 1 from Coin, it's time that move on to a Layer 2 scaling solution! Lightning is a scaling protocol for Bitcoin, and we've done our best to imitate that here.
 
 ## Components
 1. **Node**
@@ -11,4 +11,4 @@ Now that we're familiar with a blockchain's Layer 1 from Coin, it's time that we
 6. **Watchtower**
     - Since every transaction in a channel is technically valid, we have to employ the services of a watchtower to ensure that our counterparty doesn't cheat and broadcast an outdated transaction! The watchtower will keep a collection of all revocation keys for past transactions, ensuring that if the counterparty does decide to cheat, they'll be caught (and lose all of their coins in the process)!
 8. **Server**
-    - You'll have to deal with two servers for this assignment! First, you'll implement the **SegWit** protocol on the node's server. Then you'll implement the lightning protocol on the lightning node's server. 
+    - First, implement the **SegWit** protocol on the node's server. Then implement the lightning protocol on the lightning node's server. 
